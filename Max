@@ -6,14 +6,14 @@
         {
             get
             {
-               
-                return 0;
+               data_validation();
+                return maximum(variable_1, variable_2);
 
             }
          }
 
-        public double variable_1 { get return 0; set; }
-        public double variable_2 { get return 0; set; }
+        public double variable_1 { get; set; }
+        public double variable_2 { get; set; }
 
         public int opp_ID
         {
@@ -43,9 +43,11 @@
 
         private double maximum(double a, double b)
         {
+           if(a>b)
+           return a;
            
-
-            return 0;
+           else
+            return b;
         }
 
        
