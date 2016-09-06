@@ -50,8 +50,8 @@
             }
             if (variable_2 == 0)
             {
-                Console.WriteLine("Warning!.Variable 2 was 0.By default it was taken one");
-                throw new Exception("");
+                Console.WriteLine("Warning!.Variable 2 was 0.");
+                throw new Exception("Devide by zero");
             }
         }
 
